@@ -1,6 +1,7 @@
 body {
     background-color: blanchedalmond;
     font-family: 'Tilt Neon', cursive;
+    color: #171717;
 }
 
 .container {
@@ -14,5 +15,37 @@ body {
 }
 
 .main__ul-mem-ico-path {
+
+    fill: blanchedalmond;
+}
+
+.main__ul-mem-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__ul-mem-ico-img {
+    max-width: 400px;
+    margin: 15px auto;
+    border: 2px solid #171717;
+    border-radius: 5px;
+    display: none;
+    transform: scale(0);
+}
+
+.main__ul-memes {
+    transition: all 5s;
+}
+
+.main__ul-memes:hover .main__ul-mem-ico-path {
+    display: block;  
     fill: #171717;
+    transition: all 0.5s;
+}
+
+.main__ul-mem-item:hover .main__ul-mem-ico-img {
+    max-width: 400px;
+    display: block;
+    transform: scale(1);
+    transition: all 0.8s;
 }
