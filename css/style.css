@@ -15,11 +15,10 @@ body {
 }
 
 .main__ul-mem-ico-path {
-
     fill: blanchedalmond;
 }
 
-.main__ul-mem-box {
+.main__ul-mem-lable {
     display: flex;
     justify-content: space-between;
 }
@@ -33,18 +32,51 @@ body {
     height: 0;
 }
 
-.main__ul-memes:hover .main__ul-mem-ico-path {
-    display: block;  
+.main__ul-memes:hover .main__ul-mem-ico-path { 
     fill: #171717;
     transition: all 0.5s;
 }
 
+.main__ul-mem-input {
+    appearance: none;
+    position: absolute;
+}
+
+.main__ul-mem-item {
+    position: relative;
+}
+
+.main__ul-mem-ico {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
 
 .main__ul-mem-item:hover .main__ul-mem-ico-img {
-    height: 100%;
     opacity: 1;
     transform: scale(1);
-    height: 50vh;
+    height: 30vh;
     transition: 0.6s;
+}
 
+.main__ul-mem-item:hover .main__ul-mem-ico { 
+    transform: rotateZ(45deg);
+    transition: all 0.5s;
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-ico-img{
+    opacity: 1;
+    transform: scale(1);
+    height: 30vh;
+    transition: 0.6s;
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-ico {
+    transition: all 0.5s;
+    transform: rotateZ(45deg);
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-ico .main__ul-mem-ico-path { 
+    fill: #171717;
+    transition: all 0.5s;
 }
