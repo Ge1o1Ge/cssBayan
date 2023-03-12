@@ -37,12 +37,12 @@ body {
 
 .main__ul-memes:hover .main__ul-mem-text { 
     color: #171717;
-    transition: all 0.8s;
+    transition: all 0.8s ease;
 }
 
 .main__ul-memes:hover .main__ul-mem-ico-path { 
     fill: #171717;
-    transition: all 0.8s;
+    transition: all 0.8s ease;
 }
 
 .main__ul-mem-input {
@@ -66,43 +66,43 @@ body {
     transform: scale(1);
     height: 35vh;
     max-width: 80vw;
-    transition: 0.8s;
+    transition: 0.8s ease;
 }
 
 .main__ul-mem-item:not(hover) .main__ul-mem-ico-img {
-    transition: 0.6s;
+    transition: 0.6s ease;
 }
 
 .main__ul-mem-item:hover .main__ul-mem-ico { 
     transform: rotateZ(45deg);
-    transition: all 0.8s;
+    transition: all 0.8s ease;
 }
 
 .main__ul-mem-item:not(hover) .main__ul-mem-ico { 
-    transition: all 0.6s;
+    transition: all 0.6s ease;
 }
 
 .main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-ico-img{
     opacity: 1;
     transform: scale(1);
     height: 35vh;
-    transition: 0.6s;
+    transition: 0.6s ease;
 }
 
 .main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-text{
     color: #171717;
-    transition: 0.6s;
+    transition: 0.6s ease;
 }
 
 .main__ul-mem-input:checked ~.main__ul-mem-lable .main__ul-mem-ico {
-    transition: all 0.5s;
+    transition: all 0.5s ease;
     transform: rotateZ(45deg);
 }
 
 .main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-ico .main__ul-mem-ico-path { 
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 .main__ul-mem-input:not(checked) ~ .main__ul-mem-lable .main__ul-mem-ico-img {
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
