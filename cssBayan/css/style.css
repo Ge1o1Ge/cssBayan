@@ -1,0 +1,108 @@
+body {
+    background-color: blanchedalmond;
+    font-family: 'Tilt Neon', cursive;
+    color: #30248c;
+    font-size: calc((5vh/2 + 2vw/2)/2);
+    line-height: 1.5em;
+    padding: 0 calc(20px - (100vw - 100%)) 0 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main__title {
+    font-size: 3em;
+    line-height: 1.5em;
+    color: #171717;
+}
+
+.main__ul-mem-ico-path {
+    fill: blanchedalmond;
+}
+
+.main__ul-mem-ico {
+    margin-right: 1vw;
+}
+
+.main__ul-mem-ico-img {
+    margin: 0 auto;
+    border: 2px solid #171717;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top;
+    height: 0;
+}
+
+.main__ul-memes:hover .main__ul-mem-text { 
+    color: #171717;
+    transition: all 0.8s ease;
+}
+
+.main__ul-memes:hover .main__ul-mem-ico-path { 
+    fill: #171717;
+    transition: all 0.8s ease;
+}
+
+.main__ul-mem-input {
+    appearance: none;
+    position: absolute;
+}
+
+.main__ul-mem-lable-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__ul-mem-lable {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.main__ul-mem-item:hover .main__ul-mem-ico-img {
+    opacity: 1;
+    transform: scale(1);
+    height: 35vh;
+    max-width: 80vw;
+    transition: 0.8s ease;
+}
+
+.main__ul-mem-item:not(hover) .main__ul-mem-ico-img {
+    transition: 0.6s ease;
+}
+
+.main__ul-mem-item:hover .main__ul-mem-ico { 
+    transform: rotateZ(45deg);
+    transition: all 0.8s ease;
+}
+
+.main__ul-mem-item:not(hover) .main__ul-mem-ico { 
+    transition: all 0.6s ease;
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-ico-img{
+    opacity: 1;
+    transform: scale(1);
+    height: 35vh;
+    transition: 0.6s ease;
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-text{
+    color: #171717;
+    transition: 0.6s ease;
+}
+
+.main__ul-mem-input:checked ~.main__ul-mem-lable .main__ul-mem-ico {
+    transition: all 0.5s ease;
+    transform: rotateZ(45deg);
+}
+
+.main__ul-mem-input:checked ~ .main__ul-mem-lable .main__ul-mem-ico .main__ul-mem-ico-path { 
+    transition: all 0.5s ease;
+}
+
+.main__ul-mem-input:not(checked) ~ .main__ul-mem-lable .main__ul-mem-ico-img {
+    transition: all 0.5s ease;
+}
