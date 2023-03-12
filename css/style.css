@@ -1,0 +1,18 @@
+body {
+    background-color: blanchedalmond;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main__title {
+    font-size: 50px;
+    line-height: 68px;
+}
+
+.main__ul-mem-ico-path {
+    fill: #171717;
+}
