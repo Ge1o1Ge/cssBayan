@@ -25,16 +25,12 @@ body {
 }
 
 .main__ul-mem-ico-img {
-    max-width: 400px;
     margin: 15px auto;
     border: 2px solid #171717;
     border-radius: 5px;
-    display: none;
     transform: scale(0);
-}
-
-.main__ul-memes {
-    transition: all 5s;
+    transform-origin: top;
+    height: 0;
 }
 
 .main__ul-memes:hover .main__ul-mem-ico-path {
@@ -43,9 +39,12 @@ body {
     transition: all 0.5s;
 }
 
+
 .main__ul-mem-item:hover .main__ul-mem-ico-img {
-    max-width: 400px;
-    display: block;
+    height: 100%;
+    opacity: 1;
     transform: scale(1);
-    transition: all 0.8s;
+    height: 50vh;
+    transition: 0.6s;
+
 }
